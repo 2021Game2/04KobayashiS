@@ -43,11 +43,11 @@ void CXPlayer::Update()
 	{
 		if (CKey::Push('A'))
 		{
-			mRotation.mY += 2.0f;
+			mRotation.mY += 3.0f;
 		}
 		if (CKey::Push('D'))
 		{
-			mRotation.mY -= 2.0f;
+			mRotation.mY -= 3.0f;
 		}
 		if (CKey::Push(' '))
 		{
@@ -58,9 +58,26 @@ void CXPlayer::Update()
 			ChangeAnimation(1, true, 60);
 			mPosition += CVector(0.0f, 0.0f, 0.1f) * mMatrixRotate;
 		}
+		else if (CKey::Push('S'))
+		{
+			ChangeAnimation(1, true, 60);
+			mPosition += CVector(0.0f, 0.0f, -0.1f) * mMatrixRotate;
+		}
 		else {
 			ChangeAnimation(0, true, 60);
 		}
 	}
 	CXCharacter::Update();
 }
+//playerクラス
+//ジャンプの初動速度
+float m_jump_v0 = -12.0f;
+
+//ジャンプ
+float m_gravity = 0.3f;
+
+
+
+
+
+
