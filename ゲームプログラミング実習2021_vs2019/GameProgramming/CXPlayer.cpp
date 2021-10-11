@@ -49,7 +49,7 @@ void CXPlayer::Update()
 		{
 			mRotation.mY -= 3.0f;
 		}
-		if (CKey::Push(' '))
+		if (CKey::Push('C'))
 		{
 			ChangeAnimation(3, true, 30);
 		}
@@ -63,19 +63,18 @@ void CXPlayer::Update()
 			ChangeAnimation(1, true, 60);
 			mPosition += CVector(0.0f, 0.0f, -0.1f) * mMatrixRotate;
 		}
+		else if (CKey::Push(' '))
+		{
+			ChangeAnimation(1, true, 60);
+			mPosition += CVector(0.0f, 0.5f, 0.0f) * mMatrixRotate;
+		}
 		else {
 			ChangeAnimation(0, true, 60);
 		}
+
 	}
 	CXCharacter::Update();
 }
-//playerクラス
-//ジャンプの初動速度
-float m_jump_v0 = -12.0f;
-
-//ジャンプ
-float m_gravity = 0.3f;
-
 
 
 
