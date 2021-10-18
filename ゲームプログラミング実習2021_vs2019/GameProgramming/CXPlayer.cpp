@@ -76,7 +76,3 @@ void CXPlayer::Update()
 	CXCharacter::Update();
 }
 
-
-
-
-

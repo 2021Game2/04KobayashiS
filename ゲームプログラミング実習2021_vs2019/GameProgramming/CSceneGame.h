@@ -12,6 +12,7 @@
 class CSceneGame : public CScene {
 	CSound mJump;
 	CBillBoard2 mBillBoard;
+	CModel mBackGround;
 public:
 	//キャラクタのインスタンス
 	CXPlayer mPlayer;

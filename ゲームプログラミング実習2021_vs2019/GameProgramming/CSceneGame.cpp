@@ -23,6 +23,8 @@ void CSceneGame::Init() {
 
 	mBillBoard.Set(CVector(0.0f, 5.0f, 0.0f), 1.0f, 1.0f);
 
+	mBackGround.Load("plane.obj", "plane.mtl");
+	mBackGround.Load("sky.obj", "sky.mtl");
 	//テキストフォントの読み込みと設定
 	mFont.LoadTexture("FontG.png", 1, 4096 / 64);
 
@@ -62,6 +64,7 @@ void CSceneGame::Init() {
 	//カメラクラスの設定
 	Camera.Set(e, c, u);
 
+	
 }
 
 
@@ -117,6 +120,7 @@ void CSceneGame::Update() {
 	//モデル描画
 //	CRes::sModelX.Render();
 	mPlayer.Render();
+	mBackGround.Render();
 	//敵描画
 	mEnemy.Render();
 
