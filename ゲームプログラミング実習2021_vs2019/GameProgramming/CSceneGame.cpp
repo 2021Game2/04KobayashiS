@@ -44,12 +44,14 @@ void CSceneGame::Init() {
 
 	//キャラクターにモデルを設定
 	mPlayer.Init(&CRes::sModelX);
-
+	mPlayer.mRotation.mY = 180.0f;
+	mPlayer.mPosition = CVector(0.0f, 0.0f, 6.0f);
 	//敵の初期設定
 	mEnemy.Init(&CRes::sKnight);
 	mEnemy.mAnimationFrameSize = 1024;
 	//敵の配置
-	mEnemy.mPosition = CVector(7.0f, 0.0f, 0.0f);
+	mEnemy.mPosition = CVector(0.0f, 0.0f, 0.0f);
+	mEnemy.mRotation.mY = 150.0f;
 	mEnemy.ChangeAnimation(2, true, 200);
 
 	//カメラのパラメータを作成する

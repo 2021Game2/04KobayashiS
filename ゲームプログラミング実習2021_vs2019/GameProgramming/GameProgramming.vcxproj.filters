@@ -126,6 +126,9 @@
     <ClCompile Include="CBillboard2.cpp">
       <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
+    <ClCompile Include="CScore.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSceneGame.h">
@@ -244,6 +247,9 @@
     </ClInclude>
     <ClInclude Include="CBillboard2.h">
       <Filter>ソース ファイル\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="CScore.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

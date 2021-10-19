@@ -43,11 +43,15 @@ void CXPlayer::Update()
 	{
 		if (CKey::Push('A'))
 		{
-			mRotation.mY += 3.0f;
+			//mRotation.mY += 3.0f;
+			ChangeAnimation(1, true, 60);
+			mPosition += CVector(-0.1f, 0.0f, 0.0f) * mMatrixRotate;
 		}
 		if (CKey::Push('D'))
 		{
-			mRotation.mY -= 3.0f;
+			//mRotation.mY -= 3.0f;
+			ChangeAnimation(1, true, 60);
+			mPosition += CVector(0.1f, 0.0f, 0.0f) * mMatrixRotate;
 		}
 		if (CKey::Push('C'))
 		{
@@ -55,13 +59,13 @@ void CXPlayer::Update()
 		}
 		else if (CKey::Push('W'))
 		{
-			ChangeAnimation(1, true, 60);
-			mPosition += CVector(0.0f, 0.0f, 0.1f) * mMatrixRotate;
+			//ChangeAnimation(1, true, 60);
+			//mPosition += CVector(0.0f, 0.0f, 0.1f) * mMatrixRotate;
 		}
 		else if (CKey::Push('S'))
 		{
-			ChangeAnimation(1, true, 60);
-			mPosition += CVector(0.0f, 0.0f, -0.1f) * mMatrixRotate;
+			//ChangeAnimation(1, true, 60);
+			//mPosition += CVector(0.0f, 0.0f, -0.1f) * mMatrixRotate;
 		}
 		else if (CKey::Push(' '))
 		{
