@@ -123,7 +123,7 @@ void CSceneGame::Update() {
 	mPlayer.Render();
 	mBackGround.Render();
 	//“G•`‰æ
-	mEnemy.Render();
+	mEnemy.Render(); 
 
 	//ƒRƒ‰ƒCƒ_‚Ì•`‰æ
 	CCollisionManager::Get()->Render();
