@@ -45,12 +45,12 @@ void CSceneGame::Init() {
 	//キャラクターにモデルを設定
 	mPlayer.Init(&CRes::sModelX);
 	mPlayer.mRotation.mY = 180.0f;
-	mPlayer.mPosition = CVector(0.0f, 0.0f, 6.0f);
+	mPlayer.mPosition = CVector(0.0f, -1.1f, 6.0f);
 	//敵の初期設定
 	mEnemy.Init(&CRes::sKnight);
 	mEnemy.mAnimationFrameSize = 1024;
 	//敵の配置
-	mEnemy.mPosition = CVector(0.0f, 0.0f, 0.0f);
+	mEnemy.mPosition = CVector(0.0f, -1.1f, 0.0f);
 	mEnemy.mRotation.mY = 150.0f;
 	mEnemy.ChangeAnimation(2, true, 200);
 
@@ -66,7 +66,6 @@ void CSceneGame::Init() {
 	//カメラクラスの設定
 	Camera.Set(e, c, u);
 
-	
 }
 
 
@@ -112,7 +111,7 @@ void CSceneGame::Update() {
 	//行列設定
 //	glMultMatrixf(Matrix.mF);
 
-	Camera.mEye = CVector(1.0f, 2.0f, 10.0f) * Matrix;
+	Camera.mEye = CVector(1.0f,4.0f, 10.0f) * Matrix;
 
 	Camera.Render();
 
