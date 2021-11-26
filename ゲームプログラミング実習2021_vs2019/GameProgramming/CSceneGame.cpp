@@ -52,7 +52,7 @@ void CSceneGame::Init() {
 	//敵の配置
 	mEnemy.mPosition = CVector(0.0f, -1.1f, 0.0f);
 	mEnemy.mRotation.mY = 150.0f;
-	mEnemy.ChangeAnimation(2, true, 200);
+	mEnemy.ChangeAnimation(1, true, 200);
 
 	//カメラのパラメータを作成する
 	CVector e, c, u;//視点、注視点、上方向

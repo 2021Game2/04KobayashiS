@@ -3,7 +3,7 @@
 
 #include "CXCharacter.h"
 #include "CCollider.h"
-
+#include"CXPlayer.h"
 class CXEnemy : public CXCharacter
 {
 	CCollider mColSphereSword0;	//剣
@@ -20,6 +20,8 @@ public:
 	初期化(Xモデルクラスのポインタ)
 	*/
 	void Init(CModelX* model);
+
+	void Update();
 
 	//衝突処理
 	//m:自分のコライダ o:相手のコライダ

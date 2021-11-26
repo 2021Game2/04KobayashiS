@@ -14,6 +14,7 @@ public:
 
 	CXPlayer();
 
+	static CXPlayer* spInstance;
 	/*
 	初期化(Xモデルクラスのポインタ)
 	*/

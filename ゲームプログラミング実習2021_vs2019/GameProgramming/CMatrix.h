@@ -4,6 +4,8 @@
 マトリクスクラス
 4行4列の行列データを扱います
 */
+class CVector;
+
 class CMatrix {
 public:
 	union {
@@ -56,7 +58,12 @@ public:
 	//CMatrix1 += CMatrix2 の演算を行う
 	void operator+=(const CMatrix& m);
 
+	CVector operator*(const CVector& v);
+
 	CMatrix Inverse(void);
+	CVector GetXVec();
+	CVector GetYVec();
+	CVector GetZVec();
 };
 #endif
 
