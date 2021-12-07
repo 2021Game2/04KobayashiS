@@ -34,7 +34,6 @@ CEnemy2::CEnemy2()
 	mpModel = &mModel;
 }
 
-
 //コンストラクタ
 //CEnemy(位置, 回転, 拡縮)
 CEnemy2::CEnemy2(const CVector& position, const CVector& rotation, const CVector& scale)

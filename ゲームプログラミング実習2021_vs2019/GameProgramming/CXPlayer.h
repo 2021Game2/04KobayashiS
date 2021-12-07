@@ -14,13 +14,13 @@ public:
 
 	CXPlayer();
 
-	static CXPlayer* spInstance;
 	/*
 	初期化(Xモデルクラスのポインタ)
 	*/
 	void Init(CModelX* model);
 
 	void Update();
+
 };
 
 #endif

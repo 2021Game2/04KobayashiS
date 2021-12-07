@@ -271,6 +271,7 @@ void CTexture::DrawImage(float left, float right, float bottom, float top, int i
 		mHeader.width * col / mCol,
 		mHeader.height * row-- / mRow,
 		mHeader.height * row / mRow);
+
 }
 
 //s”—ñ”‚Ìİ’è
